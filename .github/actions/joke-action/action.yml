@@ -1,7 +1,28 @@
+# アクションの名前です。ジョブ内のアクションを視覚的に識別するのに役立ちます。
+# required
 name: "my joke action"
 
+# あなたのアクションが何をするのかの概要です。
+# required
 description: "use an external API to retrieve and display a joke"
 
+# 入力パラメーターは、アクションが実行時に使用することを想定したデータを指定することができます。
+# これらのパラメータはランナー内の環境変数になります。
+# not required
+# inputs:
+
+# これらの出力を定義するアクションが実行された後、
+# ワークフローの後半で後続のアクションが使用できるデータを指定します。
+# not required
+# outputs:
+
+# アクションが実行されるときに実行されるコマンド。
+# required
 runs:
   using: "node12"
   main: "main.js"
+
+# 色とFeatherアイコンを使ってバッジを作成し、
+# GitHub Marketplaceで自分のアクションをパーソナライズして区別することができます。
+# not required
+# branding:
