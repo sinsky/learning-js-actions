@@ -14,7 +14,9 @@ description: "use an external API to retrieve and display a joke"
 # これらの出力を定義するアクションが実行された後、
 # ワークフローの後半で後続のアクションが使用できるデータを指定します。
 # not required
-# outputs:
+outputs:
+  joke-output:
+    description: The resulting joke from the icanhazdadjokes API
 
 # アクションが実行されるときに実行されるコマンド。
 # required
